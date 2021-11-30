@@ -1,0 +1,18 @@
+.main-skills {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+} 
+
+.skills {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    gap: 5%;
+}
+
+img {
+    width: 100%;
+}

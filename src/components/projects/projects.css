@@ -1,0 +1,35 @@
+.main-projects {
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.main-projects > h1 {
+    text-align: center;
+}
+
+.organplus .onbikes {
+    display: flex;
+}
+
+.data {
+    width: 50%;
+}
+
+/* .img {
+    width: 50%;
+    height: 200px;
+    background-color: blueviolet;
+} */
+
+.tech-stack {
+    display: flex;
+}
+
+.tech-stack > p {
+    margin: 10px;
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
