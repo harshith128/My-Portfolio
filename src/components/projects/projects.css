@@ -1,26 +1,46 @@
+.section-pro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: fit-content;
+}
+
 .main-projects {
-    width: 60%;
+    width: 75%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .main-projects > h1 {
     text-align: center;
+    font-size: 2rem;
 }
 
-.organplus .onbikes {
+.organplus, .onbikes {
     display: flex;
+    flex-direction: row;
+    border: 8px solid blue;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .data {
-    width: 50%;
+    width: 46%;
+    margin-right: 3%;
+    margin-left: 3%;
+    text-align: center;
 }
 
-/* .img {
-    width: 50%;
-    height: 200px;
-    background-color: blueviolet;
-} */
+.onbikes > .data {
+    margin-top: 80px;
+}
+
+.organplus > .data {
+    margin-top: 25px;
+}
 
 .tech-stack {
     display: flex;
@@ -28,8 +48,36 @@
 
 .tech-stack > p {
     margin: 10px;
-    background-color: cadetblue;
+    width: fit-content;
+    background-color: rgb(233, 94, 122);
     padding: 10px;
     border-radius: 10px;
 }
+
+.repo {
+    display: flex;
+}
+
+.repo > * {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.repo > *:hover{
+    cursor: pointer;
+}
+
+.data > h2 {
+    text-align: center;
+}
+
+.img {
+    width: 50%;
+}
+
+.img > img {
+    width: 100%;
+}
+
+
 

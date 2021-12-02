@@ -3,14 +3,17 @@
     width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 60% 40%;
     padding-bottom: 4px;
     padding-top: 4px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    animation: 1s ease-out 0s 1 slideInNavbarFromTop;
 }
 
-.logo > h4 {
-    margin: auto;
-    width: fit-content;
+.active {
+    border-bottom: 3px solid tomato;
 }
 
 .NavRow {
@@ -30,3 +33,33 @@
 .nav-cont:hover{
     background-color: royalblue !important;
 }
+
+
+.theme-btn {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: "all 0.2s ease-in-out"
+} 
+
+.theme-btn:hover {
+    background-color: crimson !important;
+}
+
+@keyframes slideInNavbarFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
