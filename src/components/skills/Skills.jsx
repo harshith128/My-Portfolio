@@ -21,27 +21,27 @@ export const Skills = () => {
                 <div className="skills-cont">
                     <div className="skill">
                         <img src={html} alt="HTML LOGO" />
-                        <h3>HTML</h3>
+                        <h4>HTML</h4>
                     </div>
                     <div className="skill">
                         <img src={css} alt="CSS LOGO" />
-                        <h3>CSS</h3>
+                        <h4>CSS</h4>
                     </div>
                     <div className="skill">
                         <img src={javascript} alt="JavaScript LOGO" />
-                        <h3>JavaScript</h3>
+                        <h4>JavaScript</h4>
                     </div>
                     <div className="skill">
                         <img src={nodejs} alt="NodeJS LOGO" />
-                        <h3>NodeJS</h3>
+                        <h4>NodeJS</h4>
                     </div>
                     <div className="skill">
                         <img src={express} alt="Express LOGO" />
-                        <h3>ExpressJS</h3>
+                        <h4>ExpressJS</h4>
                     </div>
                     <div className="skill">
                         <img src={mongodb} alt="MongoDB LOGO" />
-                        <h3>MongoDB</h3>
+                        <h4>MongoDB</h4>
                     </div>
                     <div className="skill">
                         <img src={github} alt="GitHub LOGO" />

@@ -17,10 +17,11 @@
     margin: auto;
     display: flex;
     margin-top: 20px;
+    margin-bottom: 100px;
 }
 
-.address, .form {
-    width: 45%;
+.form {
+    width: 50%;
     margin: auto 5%;
     text-align: center;
 }
@@ -28,7 +29,7 @@
 .in-box {
     width: 90%;
     margin: auto;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
     font-size: 1rem;
     padding: 1rem;
     border: none;
@@ -45,10 +46,22 @@
 }
 
 .form-submit {
-    padding: 1rem;
+    width: 97%;
     border: none;
-    border-radius: 10px;
-    margin-top: 20px;
-    width: 30%;
+    font: 16px Arial;
+    display: inline-block;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    background: tomato; 
+    background: linear-gradient(to left, tomato 50%, #1A237E 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    margin-top: 1rem;
 }
+
+.form-submit:hover{
+    background-position: left ;
+}
+
 

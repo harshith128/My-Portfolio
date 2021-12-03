@@ -33,6 +33,12 @@
 .skill {
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    margin-top: 10px;
+}
+
+.skill > h4 {
+    font-size: 1rem;
 }
 
 .skill > img {

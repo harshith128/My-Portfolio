@@ -1,0 +1,21 @@
+.connect-row {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 35px 35px 35px 35px;
+    gap: 60px;
+}
+
+.connect-each {
+    flex-grow: 1;
+}
+
+.connect-content {
+    width: 100%;
+    padding: 5px;
+}
+
+.connect-img {
+    padding: 10px;
+    width: 100%;
+    display: block;
+}

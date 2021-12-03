@@ -21,7 +21,7 @@
 .organplus, .onbikes {
     display: flex;
     flex-direction: row;
-    border: 8px solid blue;
+    min-height: 0.5vh;
     border-radius: 10px;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -32,11 +32,15 @@
     margin-right: 3%;
     margin-left: 3%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.onbikes > .data {
+/* .onbikes > .data {
     margin-top: 80px;
-}
+} */
 
 .organplus > .data {
     margin-top: 25px;
@@ -46,12 +50,29 @@
     display: flex;
 }
 
-.tech-stack > p {
+.tech-stack > h4 {
     margin: 10px;
+    font-size: 1rem;
     width: fit-content;
-    background-color: rgb(233, 94, 122);
+    border: 1px solid tomato;
+    background: linear-gradient(to top, rgba(100, 100, 100, 0)  50%, tomato 50%) bottom;
     padding: 10px;
-    border-radius: 10px;
+    background-size: 100% 200%;
+    transition: .1s ease-out;
+}
+
+.data > p{
+    font-size: 1rem;
+}
+
+.data > h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tech-stack > h4:hover {
+    color: #1A237E;
+    background-position: top ;
 }
 
 .repo {
@@ -60,6 +81,8 @@
 
 .repo > * {
     flex-grow: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
 }
 
@@ -67,16 +90,36 @@
     cursor: pointer;
 }
 
-.data > h2 {
-    text-align: center;
+.pro {
+    height: 350px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 .img {
     width: 50%;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img > img {
     width: 100%;
+    transition: 0.5s all ease-in-out;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    height: 100%;
+}
+
+.img:hover > img{
+    transform: scale(1.2);
+}
+
+.heading-project {
+    font-size: 2rem;
 }
 
 

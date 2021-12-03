@@ -49,14 +49,23 @@ img {
 }
 
 .resume{
-    padding: 1rem;
+    /* padding: 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 10px; */
+    border: none;
+    font: 16px Arial;
+    display: inline-block;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    background: tomato; 
+    background: linear-gradient(to left, tomato 50%, #0f1338 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
 }
 
 .resume:hover{
-    transform: scale(1.01);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-position: left ;
 }
 
 @keyframes heroMovement {
@@ -85,3 +94,4 @@ img {
       transform: translateX(0%);
     }
   }
+

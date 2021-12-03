@@ -9,12 +9,11 @@ export const Themes = {
             "backgroundColor": "#916BBF",
         },
         "themebtn": {
-            "color": "#FBFFE2",
-            "backgroundColor": "#71DFE7",
-            "&:hover": "#C2FFF9"
+            "fontColor": "#1A237E",
+            "backgroundColor": "#303F9F",
         },
         "home": {
-            "color": "#C2FFF9",
+            "color": "#FBFFE2",
             // "backgroundColor": "#150050",
             "background": "linear-gradient(#160040, #1C0C5B, #3D2C8D, #916BBF)",
         },
@@ -29,21 +28,20 @@ export const Themes = {
     "light": {
         "navbar": {
             "color": "#160040",
-            "backgroundColor": "#71DFE7",
+            "backgroundColor": "#81D4FA",
         },
         "contact": {
             "color": "#FBFFE2",
             "backgroundColor": "#B2F9FC",
         },
         "themebtn": {
-            "color": "#FBFFE2",
-            "backgroundColor": "#FF5C58",
-            "&:hover": "#FFF323"
+            "fontColor": "#BBDEFB",
+            "backgroundColor": "#E1F5FE",
         },
         "home": {
             "color": "#150050",
             // "backgroundColor": "#A8ECE7",
-            "background": "linear-gradient(#71DFE7, #A8ECE7, #A2D2FF, #B2F9FC)",
+            "background": "linear-gradient(#4FC3F7, #A8ECE7, #E1F5FE, #B2F9FC)",
         },
         "resume": {
             "color": "#C2FFF9",

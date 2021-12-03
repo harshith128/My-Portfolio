@@ -4,16 +4,17 @@
     margin: auto;
     display: grid;
     grid-template-columns: 60% 40%;
-    padding-bottom: 4px;
-    padding-top: 4px;
     position: fixed;
     z-index: 1;
     top: 0px;
+    box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.5);
+    /* box-shadow: 0 8px 8px -4px lightblue; */
     animation: 1s ease-out 0s 1 slideInNavbarFromTop;
 }
 
 .active {
-    border-bottom: 3px solid tomato;
+    border-bottom: 5px solid tomato;
+    transition: 2s ease-out;
 }
 
 .NavRow {
@@ -25,13 +26,18 @@
     flex-grow: 1;
     text-align: center;
     font-size: 0.9rem;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    border-radius: 10px;
+    font: 12px Arial;
+    display: inline-block;
+    padding: 1em 2em;
+    text-align: center;
+    background: rgba(100, 100, 100, 0.5); 
+    background: linear-gradient(to top, rgba(100, 100, 100, 0)  50%, tomato 50%) bottom;
+    background-size: 100% 200%;
+    transition: .1s ease-out;
 }
 
 .nav-cont:hover{
-    background-color: royalblue !important;
+    background-position: top ;
 }
 
 
@@ -41,18 +47,19 @@
     width: 40px;
     margin-right: 5px;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 85%;
     padding-top: 5px;
     border-radius: 50%;
     border: none;
     align-items: center;
     justify-content: center;
     outline: none;
-    transition: "all 0.2s ease-in-out"
+    transition: "all 1s ease-in-out";
 } 
 
 .theme-btn:hover {
-    background-color: crimson !important;
+    background-color: tomato !important;
+    color: rgb(2, 2, 63);
 }
 
 @keyframes slideInNavbarFromTop {
@@ -63,3 +70,4 @@
       transform: translateY(0);
     }
   }
+
