@@ -8,57 +8,39 @@ import mongodb from "../../assets/mongodb-original.svg";
 import react from "../../assets/react-original.svg";
 import redux from "../../assets/redux-original.svg";
 import dsa from "../../assets/dsa.png";
+// import { IconName } from "react-icons/di";
 import "./skills.css";
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 
 export const Skills = () => {
+    const skillsCont = [ { id:1, skill: html, text: "HTML" , alter: "HTML LOGO" },
+                            { id:2, skill: css, text: "CSS" , alter: "CSS LOGO" },
+                            { id:3, skill: javascript, text: "JavaScript" , alter: "JavaScript LOGO" },
+                            { id:4, skill: nodejs, text: "NodeJS" , alter: "NodeJS LOGO" }, 
+                            { id:5, skill: express, text: "Express" , alter: "Express LOGO" }, 
+                            { id:6, skill: mongodb, text: "MongoDB" , alter: "MongoDB LOGO" }, 
+                            { id:7, skill: github, text: "GitHub" , alter: "GitHub LOGO" },
+                            { id:8, skill: react, text: "React" , alter: "React LOGO" }, 
+                            { id:9, skill: redux, text: "Redux" , alter: "Redux LOGO" },
+                            { id:10, skill: dsa, text: "DSA" , alter: "DSA LOGO" }, ]
+
     const { Themes, currentTheme } = useContext(ThemeContext);
     return (
         <section id="skillsID" className="section-skills" style={ currentTheme === "light" ? Themes.light.home : Themes.dark.home }>
             <div className="main-skills">
-                <h1 className="skills-head">SKILLS AND TOOLS</h1>
+                <h1 className="skills-head">Skills And Tools</h1>
                 <div className="skills-cont">
-                    <div className="skill">
-                        <img src={html} alt="HTML LOGO" />
-                        <h4>HTML</h4>
-                    </div>
-                    <div className="skill">
-                        <img src={css} alt="CSS LOGO" />
-                        <h4>CSS</h4>
-                    </div>
-                    <div className="skill">
-                        <img src={javascript} alt="JavaScript LOGO" />
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div className="skill">
-                        <img src={nodejs} alt="NodeJS LOGO" />
-                        <h4>NodeJS</h4>
-                    </div>
-                    <div className="skill">
-                        <img src={express} alt="Express LOGO" />
-                        <h4>ExpressJS</h4>
-                    </div>
-                    <div className="skill">
-                        <img src={mongodb} alt="MongoDB LOGO" />
-                        <h4>MongoDB</h4>
-                    </div>
-                    <div className="skill">
-                        <img src={github} alt="GitHub LOGO" />
-                        <h3>GitHub</h3>
-                    </div>
-                    <div className="skill">
-                        <img src={react} alt="React LOGO" />
-                        <h3>React</h3>
-                    </div>
-                    <div className="skill">
-                        <img src={redux} alt="Redux LOGO" />
-                        <h3>Redux</h3>
-                    </div>
-                    <div className="skill">
-                        <img src={dsa} alt="DS-ALGO LOGO" />
-                        <h3>DSA</h3>
-                    </div>
+                    {
+                        skillsCont.map((ele) => {
+                            return (
+                                <div key={ ele.id } className="skill">
+                                    <img src={ ele.skill } alt={ ele.alter } />
+                                    <p className="skill-ptag">{ ele.text }</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </section>

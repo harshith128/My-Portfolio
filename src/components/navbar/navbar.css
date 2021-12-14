@@ -10,11 +10,11 @@
     box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.5);
     /* box-shadow: 0 8px 8px -4px lightblue; */
     animation: 1s ease-out 0s 1 slideInNavbarFromTop;
+    z-index: 3;
 }
 
 .active {
-    border-bottom: 5px solid tomato;
-    transition: 2s ease-out;
+    color: rgb(255, 41, 4);
 }
 
 .NavRow {
@@ -34,32 +34,55 @@
     background: linear-gradient(to top, rgba(100, 100, 100, 0)  50%, tomato 50%) bottom;
     background-size: 100% 200%;
     transition: .1s ease-out;
+    cursor: pointer;
+}
+
+.nav-cont > p {
+    font-weight: 500;
 }
 
 .nav-cont:hover{
-    background-position: top ;
+    background-position: top;
+    color: #0f1338 ;
+}
+
+.theme-cont {
+    flex-grow: 1;
 }
 
 
 .theme-btn {
-    cursor: pointer;
-    height: 40px;
-    width: 40px;
-    margin-right: 5px;
+    width: fit-content;
+    height: fit-content;
+    float: right;
+    padding: 0.6rem;
     margin-top: 10px;
-    margin-left: 85%;
-    padding-top: 5px;
+    margin-right: 20px;
+    right: 100%;
     border-radius: 50%;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    outline: none;
     transition: "all 1s ease-in-out";
 } 
 
 .theme-btn:hover {
     background-color: tomato !important;
     color: rgb(2, 2, 63);
+}
+.sidebar {
+    display: none;
+}
+
+.small {
+    display: none;
+}
+
+.dis-able {
+    position: absolute;
+    z-index: 3;
+    padding: 10px;
+}
+
+.onlySmallScreen{
+    display: none;
 }
 
 @keyframes slideInNavbarFromTop {
@@ -69,5 +92,27 @@
     100% {
       transform: translateY(0);
     }
+  }
+
+  @media only screen and (max-width: 490px) {
+      .onlySmallScreen{
+          display: block;
+          padding: 10px;
+      }
+      .NavRow {
+          display: none;
+      }
+      .theme-btn {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin: auto;
+      }
+  }
+
+
+  @media only screen and (max-width: 530px) {
+      .nav-cont{
+          font-size: 0.7rem;
+      }
   }
 

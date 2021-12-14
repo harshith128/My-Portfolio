@@ -2,7 +2,6 @@ import "./home.css";
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import hero from "../../assets/hero.png";
-import { Connect } from "../connect/Connect";
 
 // function mouseover() {
 //     document.getElementById("gfg").style.color = "red";
@@ -20,12 +19,9 @@ export const Home = () => {
         <section id="homeID" className="section-home" style={ currentTheme === "light" ? Themes.light.home : Themes.dark.home }>
             <div className="home" >
                 <div className="name">
-                    <h2>Hi, I'am</h2>
-                    <h1>HARSHITH C R</h1>
-                    <h2>I'm a Full stack web developer</h2>
-                    <div>
-                        <Connect />
-                    </div>
+                    <p className="info">Hi, I'am</p>
+                    <h1 className="my-name">HARSHITH</h1>
+                    <p className="info">Full-Stack web developer</p>
                     <a href="https://drive.google.com/file/d/19krubhLEDpQ5a0UimO6VBjD0U2waBQjf/view?usp=sharing" target="_blank" rel="noopener noreferrer" ><button className="resume" >My Resume</button></a>
                 </div>
                 <div className="hero">

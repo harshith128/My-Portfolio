@@ -3,21 +3,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
+    height: fit-content;
+    z-index: 2;
 }
 
 .home {
     display: flex;
     width: 80%;
     margin: auto;
-    height: 100vh;
+    height: fit-content;
     position: absolute;
     margin-top: 100px;
 }
 
 .hero {
     width: 50%;
+    margin: auto;
     margin-top: 100px;
     animation: 2s ease-in-out infinite heroMovement;
     /* position: absolute; */
@@ -26,6 +29,7 @@
 .hero > img {
     animation: 1s ease-out 0s 1 slideInNameFromRight;
     width: 100%;
+    max-height: 300px;
 }
 
 img {
@@ -35,23 +39,16 @@ img {
 .name {
     width: 50%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
     position: relative;
     animation: 1s ease-out 0s 1 slideInNameFromLeft;
 }
 
-.name > h1 {
-    font-size: 1.5rem;
-}
-
-.name > h1:nth-child(2){
-    font-size: 2.5rem;
+.my-name {
+    font-size: 48px;
 }
 
 .resume{
-    /* padding: 1rem;
-    border: none;
-    border-radius: 10px; */
     border: none;
     font: 16px Arial;
     display: inline-block;
@@ -61,11 +58,12 @@ img {
     background: tomato; 
     background: linear-gradient(to left, tomato 50%, #0f1338 50%) right;
     background-size: 200%;
-    transition: .5s ease-out;
+    transition: .2s ease-out;
 }
 
 .resume:hover{
     background-position: left ;
+    cursor: pointer;
 }
 
 @keyframes heroMovement {
@@ -73,7 +71,7 @@ img {
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-50px);
+        transform: translateY(-20px);
       }
 }
 
@@ -92,6 +90,65 @@ img {
     }
     100% {
       transform: translateX(0%);
+    }
+  }
+
+
+  @media (max-width: 800px) {
+    .home {
+      flex-direction: column;
+      margin-top: 0px;
+    }
+    .name, .hero {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .home {
+      margin-top: 100px;
+    }
+    .my-name {
+      font-size: 40px;
+    }
+    .info, .my-name{
+      margin: 0;
+    }
+    .info {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .hero {
+      margin-top: 50px;
+    }
+  }
+
+  /* @media (max-width: 420px) {
+    .home {
+      margin-top: 30px;
+    }
+    .resume {
+      padding: 10px;
+      font-size: 12px;
+    }
+    .my-name {
+      font-size: 25px;
+    }
+  } */
+
+  @media (max-width: 420px) {
+    .home {
+      margin-top: 20px;
+    }
+    .resume {
+      padding: 6px;
+      font-size: 10px;
+    }
+    .my-name {
+      font-size: 20px;
+    }
+    .info {
+      font-size: 12px;
     }
   }
 

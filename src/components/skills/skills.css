@@ -3,42 +3,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     height: fit-content;
-    height: 100vh;
+    z-index: 2;
 }
 
 
 .main-skills {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
     margin: auto;
-    text-align: center;
-    margin-top: 100px;
-    height: 100vh;
+    height: fit-content;
     position: absolute;
+    margin-top: 100px;
 } 
 
 .skills-head {
     font-size: 2rem;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .skills-cont {
     width: 100%;
     margin: auto;
+    margin-bottom: 100px;
     display: grid;
-    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-columns: 16% 16% 16% 16% 16%;
     gap: 5%;
+    justify-content: center;
+    align-content: center;
 }
 
 .skill {
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
     margin-top: 10px;
 }
 
-.skill > h4 {
+.skill-ptag {
     font-size: 1rem;
+    text-align: center;
 }
 
 .skill > img {
@@ -49,5 +57,58 @@
 }
 
 .skill:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
+
+@media (max-width: 800px) {
+    .skills-cont {
+        grid-template-columns: 20% 20% 20% 20%;
+        gap: 6%;
+    }
+    .skills-head {
+      font-size: 40px;
+    }
+    .skill-ptag {
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .skills-head {
+        font-size: 40px;
+      }
+      .skill-ptag {
+          font-size: 12px;
+      }
+  }
+
+  @media (max-width: 420px) {
+    .skills-cont {
+        grid-template-columns: 32% 32% 32%;
+        gap: 3%;
+    }
+    .skills-head {
+        font-size: 20px;
+      }
+
+      .skill {
+          padding: 10px;
+      }
+      .skill-ptag {
+          font-size: 10px;
+      }
+      .skill > img {
+          display: none;
+      }
+      .main-skills {
+          margin: auto;
+          margin-top: 10px;
+      }
+  }
+
+  @media (max-width: 350px) {
+    .skill {
+        padding: 6px;
+    }
+  }
+
