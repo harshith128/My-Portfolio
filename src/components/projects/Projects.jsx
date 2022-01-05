@@ -3,6 +3,9 @@ import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import onnBikes from "../../assets/onnBikes.png";
 import organplus from "../../assets/login.png";
+import atom from "../../assets/atom.png";
+import marvel from "../../assets/marvel.png";
+import movie from "../../assets/movie.png";
 
 export const Project = () => {
     const projectCont = [
@@ -25,6 +28,36 @@ export const Project = () => {
             imageAlt: "Organ Plus image",
             git: "https://github.com/harshith128/Organ",
             live: "https://organ-plus-harshithcr1357-gmailcom.vercel.app", 
+        },
+        { 
+            name: "Atom",
+            description: "Atom is a clone of the Kickstarter website, where the creators will share their ideas with the communities and the communities will fund them to bring that idea to a reality.",
+            // tech: ["React", "CSS", "JavaScript", "MongoDB", "Node"],
+            tech: "Tech-Stack: ReactJS | CSS | JavaScript | NodeJS | MongoDB | Material-UI",
+            image: atom,
+            imageAlt: "Atom image",
+            git: "https://github.com/harshith128/Atom",
+            live: "https://atom-client.vercel.app/", 
+        },
+        { 
+            name: "Marvel",
+            description: "Marvel is a marvel comics character and comic book search engine app.",
+            // tech: ["React", "CSS", "JavaScript", "MongoDB", "Node"],
+            tech: "Tech-Stack: HTML | CSS | JavaScript",
+            image: marvel,
+            imageAlt: "Marvel image",
+            git: "https://github.com/harshith128/Marvel-Search-Engine",
+            live: "https://marvel-comics-search-engine.netlify.app/", 
+        },
+        { 
+            name: "MovieHub",
+            description: "MovieHub is movie search engine app",
+            // tech: ["React", "CSS", "JavaScript", "MongoDB", "Node"],
+            tech: "Tech-Stack: HTML | CSS | JavaScript",
+            image: movie,
+            imageAlt: "MovieHub image",
+            git: "https://github.com/harshith128/movieHub",
+            live: "https://moviesearch-engine.netlify.app/", 
         }
     ]
 

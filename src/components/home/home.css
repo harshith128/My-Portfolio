@@ -54,15 +54,19 @@ img {
     display: inline-block;
     padding: 1em 2em;
     text-align: center;
-    color: white;
+    /* color: white; */
     background: tomato; 
-    background: linear-gradient(to left, tomato 50%, rgb(253, 0, 0) 50%) right;
-    background-size: 200%;
+    /* background: linear-gradient(to left, tomato 50%, rgb(253, 0, 0) 50%) right; */
+    background: linear-gradient(to top, rgba(100, 100, 100, 0)  50%, rgb(253, 0, 0) 50%) bottom;
+    /* background-size: 200%; */
+    background-size: 100% 200%;
+    border: 2px solid rgb(253, 0, 0);
     transition: .2s ease-out;
 }
 
 .resume:hover{
-    background-position: left ;
+    /* background-position: left ; */
+    background-position: top;
     cursor: pointer;
 }
 
