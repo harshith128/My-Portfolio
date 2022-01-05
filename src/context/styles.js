@@ -2,7 +2,8 @@ export const Themes = {
     "dark" : {
         "navbar": {
             "color": "#FBFFE2",
-            "background": "linear-gradient(147deg, #000000 0%, #04619f 74%)",
+            // "background": "linear-gradient(147deg, #000000 0%, #04619f 74%)",
+            "background": "#150050",
         },
         // "contact": {
         //     "color": "#FBFFE2",
@@ -10,12 +11,14 @@ export const Themes = {
         // },
         "themebtn": {
             "fontColor": "#1A237E",
-            "backgroundColor": "#303F9F",
+            // "backgroundColor": "#303F9F",
+            "background": "#150050",
         },
         "home": {
             "color": "#FBFFE2",
             // "backgroundColor": "#150050",
-            "background": "linear-gradient(147deg, #000000 0%, #04619f 74%)",
+            // "background": "linear-gradient(147deg, #000000 0%, #04619f 74%)",
+            "background": "#150050",
         },
         "contact": {
             "color": "#FBFFE2",
@@ -37,7 +40,8 @@ export const Themes = {
         "navbar": {
             "color": "#160040",
             // "backgroundColor": "#81D4FA",
-            "background": "linear-gradient(147deg, #4FC3F7 0%, #A8ECE7 74%)",
+            // "background": "linear-gradient(147deg, #4FC3F7 0%, #A8ECE7 74%)",
+            "background": "#4FC3F7",
         },
         // "contact": {
         //     "color": "#FBFFE2",
@@ -45,12 +49,13 @@ export const Themes = {
         // },
         "themebtn": {
             "fontColor": "#FBFFE2",
-            "backgroundColor": "#E1F5FE",
+            "backgroundColor": "#4FC3F7",
         },
         "home": {
             "color": "#150050",
             // "backgroundColor": "#A8ECE7",
-            "background": "linear-gradient(147deg, #4FC3F7 0%, #A8ECE7 74%)",
+            // "background": "linear-gradient(147deg, #4FC3F7 0%, #A8ECE7 74%)",
+            "background": "#4FC3F7",
             // "background": "linear-gradient(#4FC3F7, #A8ECE7, #E1F5FE, #B2F9FC)",
         },
         "contact": {

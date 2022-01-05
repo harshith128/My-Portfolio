@@ -20,7 +20,7 @@ export const Connect = () => {
                             <FaGithub />
                             </a>
 
-                            <a style={ currentTheme === "light" ? { color: "#150050" } : { color: "#FBFFE2" } } className="connect-content" rel="noopener noreferrer" target="_blank" href="https://twitter.com/Harshit39931015?t=b42PKDVjnSWHKYFm-GieLA&s=09">
+                            <a style={ currentTheme === "light" ? { color: "#150050" } : { color: "#FBFFE2" } } className="connect-content" rel="noopener noreferrer" target="_blank" href="https://twitter.com/Harshith1317">
                             <FaTwitter />
                             </a>
                         </div>

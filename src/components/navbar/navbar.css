@@ -31,7 +31,7 @@
     padding: 1em 2em;
     text-align: center;
     background: rgba(100, 100, 100, 0.5); 
-    background: linear-gradient(to top, rgba(100, 100, 100, 0)  50%, tomato 50%) bottom;
+    background: linear-gradient(to top, rgba(100, 100, 100, 0)  50%, rgb(253, 0, 0) 50%) bottom;
     background-size: 100% 200%;
     transition: .1s ease-out;
     cursor: pointer;
@@ -61,11 +61,12 @@
     right: 100%;
     border-radius: 50%;
     transition: "all 1s ease-in-out";
+    cursor: pointer;
 } 
 
 .theme-btn:hover {
-    background-color: tomato !important;
-    color: rgb(2, 2, 63);
+    /* background-color: tomato !important; */
+    color: rgb(253, 0, 0);
 }
 .sidebar {
     display: none;
