@@ -46,6 +46,13 @@ img {
 
 .my-name {
     font-size: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .resume{
@@ -62,6 +69,8 @@ img {
     background-size: 100% 200%;
     border: 2px solid rgb(253, 0, 0);
     transition: .2s ease-out;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .resume:hover{

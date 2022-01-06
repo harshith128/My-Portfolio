@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   height: fit-content;
   z-index: 2;
 }
@@ -37,6 +37,7 @@
 .about-data {
   text-align: center;
   line-height: 1.5;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
 

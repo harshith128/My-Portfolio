@@ -19,10 +19,10 @@ export const Home = () => {
         <section id="homeID" className="section-home" style={ currentTheme === "light" ? Themes.light.home : Themes.dark.home }>
             <div className="home" >
                 <div className="name">
-                    <p className="info">Hi, I'am</p>
+                    <h2 className="info">Hi, I'am</h2>
                     <h1 className="my-name">HARSHITH</h1>
-                    <p className="info">Full-Stack web developer</p>
-                    <a href="https://drive.google.com/file/d/19krubhLEDpQ5a0UimO6VBjD0U2waBQjf/view?usp=sharing" target="_blank" rel="noopener noreferrer" ><button className="resume" >My Resume</button></a>
+                    <h2 className="info">Full-Stack web developer</h2>
+                    <a href="https://drive.google.com/file/d/19krubhLEDpQ5a0UimO6VBjD0U2waBQjf/view?usp=sharing" target="_blank" rel="noopener noreferrer" ><button className="resume" style={ currentTheme === "light" ? Themes.light.resume : Themes.dark.resume } >My Resume</button></a>
                 </div>
                 <div className="hero">
                     <img src={hero} alt="hero" />

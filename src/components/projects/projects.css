@@ -11,6 +11,8 @@
 .heading-project {
     margin-top: 100px;
     font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .main-projects {
@@ -24,13 +26,13 @@
 .pro {
     width: 90%;
     margin: auto;
-    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+    box-shadow: 5px 5px 25px 0px rgba(52, 58, 139, 0.5);
     /* border-radius: 20px; */
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     padding: 10px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    /* box-shadow: 0 3px 10px rgba(52, 58, 139, 0.5); */
 }
 
 .data {
@@ -45,6 +47,8 @@
 .pro-head {
     text-align: center;
     font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .desc {
@@ -52,6 +56,8 @@
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .projects {
@@ -65,7 +71,7 @@
     /* border-bottom-right-radius: 5px; */
     /* border-top-right-radius: 5px; */
     display: block;
-    height: 300px;
+    height: 315px;
 }
 
 .img {
@@ -89,11 +95,13 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
-.tech {
+/* .tech {
     padding: 20px;
-}
+} */
 
 .repo {
     width: fit-content;
@@ -107,8 +115,10 @@
     padding: 10px;
     background-size: 100% 200%;
     transition: .1s ease-out;
-    border: 1px solid rgb(253, 0, 0);
+    border: 1.5px solid rgb(253, 0, 0);
     margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .repo > a:hover {
