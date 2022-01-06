@@ -4,7 +4,7 @@ export const Themes = {
             "color": "#FBFFE2",
             // "background": "linear-gradient(147deg, #000000 0%, #04619f 74%)",
             // "background": "#150050",
-            "background": "#0e0131"
+            "background": "#00062b",
         },
         // "contact": {
         //     "color": "#FBFFE2",
@@ -14,13 +14,13 @@ export const Themes = {
             "fontColor": "#1A237E",
             // "backgroundColor": "#303F9F",
             // "background": "#150050",
-            "background": "#0e0131"
+            "background": "#00062b"
         },
         "home": {
             "color": "#FBFFE2",
             // "backgroundColor": "#150050",
             // "background": "linear-gradient(147deg, #000000 0%, #04619f 74%)",
-            "background": "#150050",
+            "background": "#000B49"
         },
         "contact": {
             "color": "#FBFFE2",

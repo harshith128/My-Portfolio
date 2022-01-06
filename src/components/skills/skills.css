@@ -54,18 +54,70 @@
     text-align: center;
 }
 
-.skill > img {
+/* .skill > img {
     width: 100%;
     max-height: 60px;
     padding: 0;
     margin: 0;
+} */
+
+.badge {
+    text-align: center;
+    font-size: 48px;
 }
 
 .skill:hover {
     transform: scale(1.02);
 }
 
+.skill:hover > .JavaScript  {
+    color: #F6D860;
+}
+
+.skill:hover > .html {
+    color:  #F06529;
+}
+
+.skill:hover > .css {
+    color: #e31b5f;
+}
+
+.skill:hover > .react {
+    color: #61DBFB;
+}
+
+.skill:hover > .redux {
+    color: #764abc;
+}
+
+.skill:hover > .bootstrap {
+    color: purple;
+}
+
+.skill:hover > .mongo {
+    color: #4DB33D;
+}
+
+.skill:hover > .nodejs {
+    color: #3C873A;
+}
+
+.skill:hover > .express {
+    color: #3C873A;
+}
+
+.skill:hover > .postman {
+    color: #EF5B25;
+}
+
+.skill:hover > .vscode {
+    color: #0078d7;
+}
+
 @media (max-width: 800px) {
+    .badge {
+        font-size: 32px;
+    }
     .skills-cont {
         grid-template-columns: 20% 20% 20% 20%;
         gap: 6%;
@@ -79,6 +131,9 @@
   }
 
   @media (max-width: 600px) {
+    .badge {
+        font-size: 24px;
+    }
     .skills-head {
         font-size: 40px;
       }
@@ -88,6 +143,9 @@
   }
 
   @media (max-width: 420px) {
+    .badge {
+        font-size: 20px;
+    }
     .skills-cont {
         grid-template-columns: 32% 32% 32%;
         gap: 3%;
@@ -112,6 +170,9 @@
   }
 
   @media (max-width: 350px) {
+    .badge {
+        font-size: 16px;
+    }
     .skill {
         padding: 6px;
     }

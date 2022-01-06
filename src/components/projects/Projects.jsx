@@ -5,7 +5,7 @@ import onnBikes from "../../assets/onnBikes.png";
 import organplus from "../../assets/login.png";
 import atom from "../../assets/atom.png";
 import marvel from "../../assets/marvel.png";
-import movie from "../../assets/movie.png";
+// import movie from "../../assets/movie.png";
 
 export const Project = () => {
     const projectCont = [
@@ -49,16 +49,16 @@ export const Project = () => {
             git: "https://github.com/harshith128/Marvel-Search-Engine",
             live: "https://marvel-comics-search-engine.netlify.app/", 
         },
-        { 
-            name: "MovieHub",
-            description: "MovieHub is movie search engine app",
-            // tech: ["React", "CSS", "JavaScript", "MongoDB", "Node"],
-            tech: "Tech-Stack: HTML | CSS | JavaScript",
-            image: movie,
-            imageAlt: "MovieHub image",
-            git: "https://github.com/harshith128/movieHub",
-            live: "https://moviesearch-engine.netlify.app/", 
-        }
+        // { 
+        //     name: "MovieHub",
+        //     description: "MovieHub is movie search engine app",
+        //     // tech: ["React", "CSS", "JavaScript", "MongoDB", "Node"],
+        //     tech: "Tech-Stack: HTML | CSS | JavaScript",
+        //     image: movie,
+        //     imageAlt: "MovieHub image",
+        //     git: "https://github.com/harshith128/movieHub",
+        //     live: "https://moviesearch-engine.netlify.app/", 
+        // }
     ]
 
     const { Themes, currentTheme } = useContext(ThemeContext);
@@ -67,11 +67,11 @@ export const Project = () => {
             <h1 className="heading-project">Projects</h1>
             <div className="main-projects">
 
-                <div className="projects">
+                <div className="projects" >
                     {
                         projectCont.map((ele, j) => {
                             return (
-                                <div key={`project${j}`} className="pro">
+                                <div key={`project${j}`} className="pro" style={ currentTheme === "light" ? Themes.light.navbar : Themes.dark.navbar }>
                                     <div className="data">
                                         <h2 className="pro-head">{ ele.name }</h2>
                                         <p className="desc">{ ele.description }</p>
