@@ -40,7 +40,7 @@
 }
 
 .skill {
-    /* border-radius: 10px; */
+    border-radius: 5px;
     padding: 10px;
     box-shadow: 0 3px 10px rgba(52, 58, 139, 0.5);
     margin-top: 10px;
