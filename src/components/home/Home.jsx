@@ -22,7 +22,7 @@ export const Home = () => {
                     <h2 className="info">Hi, I'am</h2>
                     <h1 className="my-name">HARSHITH</h1>
                     <h2 className="info">Full-Stack web developer</h2>
-                    <a href="https://drive.google.com/file/d/19krubhLEDpQ5a0UimO6VBjD0U2waBQjf/view?usp=sharing" target="_blank" rel="noopener noreferrer" ><button className="resume" style={ currentTheme === "light" ? Themes.light.resume : Themes.dark.resume } >My Resume</button></a>
+                    <a href="https://drive.google.com/file/d/1ncrrTNIMZ3cpDNhbOlDn63N_ux7DXCmo/view?usp=sharing" target="_blank" rel="noopener noreferrer" ><button className="resume" style={ currentTheme === "light" ? Themes.light.resume : Themes.dark.resume } >My Resume</button></a>
                 </div>
                 <div className="hero">
                     <img src={hero} alt="hero" />
